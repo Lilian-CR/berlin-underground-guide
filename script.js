@@ -29,6 +29,27 @@ const venues = [
         lon: 13.4100,
         events: ['Art Event 1', 'Music Event 2'],
     },
+{
+        name: 'Venue 3',
+        description: 'A cool underground spot for music events.',
+        lat: 52.5210,
+        lon: 13.4015,
+        events: ['Music Event 1', 'Art Exhibition 1'],
+    },
+    {
+        name: 'Venue 4',
+        description: 'Underground art gallery with regular exhibitions.',
+        lat: 52.5230,
+        lon: 13.4100,
+        events: ['Art Event 1', 'Music Event 2'],
+    },
+{
+        name: 'Venue 5',
+        description: 'Underground art gallery with regular exhibitions.',
+        lat: 52.5230,
+        lon: 13.4100,
+        events: ['Art Event 1', 'Music Event 2'],
+    },
     // Add more venues as needed
 ];
 
