@@ -5,27 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Berlin Underground Guide - Discover the hidden underground venues of Berlin">
     <title>Berlin Underground Guide</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
 </head>
 <body>
-    <div class="header">
-        <h1>Berlin Underground Guide</h1>
-        <p>The real underground venues guide</p>
-        <button id="theme-toggle" class="theme-toggle">🌙</button>
+    <header id="header">
+        <div class="header">
+            <h1>Berlin Underground Guide</h1>
+            <p>The real underground venues guide</p>
+            <button id="theme-toggle" class="theme-toggle">🌙</button>
+        </div>
+        <button id="about-btn" class="about-btn">ABOUT</button>  
+    </header>
+
+    <div class="map-container">
+        <div id="map"></div>
+        <div id="venue-modal" class="venue-modal">
+            <div class="venue-modal-content">
+                <span class="close-btn">&times;</span>
+                <h2 id="venue-name"></h2>
+                <img id="venue-image" src="" alt="Venue Image" />
+                <p id="venue-description"></p>
+                <a id="venue-website" href="" target="_blank">Visit Website</a>
+                <p class="photo-credit" id="venue-photo-credit">Background photo credit by Oyemi Noize/No Heroes IG. <a href="https://www.instagram.com/noheroes.jpg/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+            </div>
+        </div>
     </div>
 
-    <div id="map" class="map"></div>
-
-    <div class="sidebar">
-        <h2>Venues</h2>
-        <ul id="venue-list">
-            <!-- Venue list will be dynamically added -->
-        </ul>
+    <div id="about-modal" class="about-modal">
+        <div class="about-modal-content">
+            <span class="close-about-btn">&times;</span>
+            <h2>ABOUT</h2>
+            <p>
+                "Berlin Underground Guide”, is a website map guide for underground music venues in Berlin, that are actually located in the basement.
+            </p>
+            <p>
+                Includes map, pins, and fancy JavaScript techniques, as well as CSS and HTML styling from the previous semester at ReDi School.
+            </p>
+            <p>
+                I am proud to welcome you to this humble website! This is where you can find amazing venues and explore locations in your area. Whether you're looking for jazz, indie-rock, or punk, this map will help you find them all.
+            </p>
+            <p>
+                Get started by exploring the interactive map, and click on any marker to discover more about each venue.
+            </p>
+            <p class="credits-text">
+                Webpage by Lilian Rodrigues - ReDi School - Fall Semester 2024 / JavaScript. 
+                <br>
+                Background photo credit by Oyèmi Noize/No Heroes IG. 
+                <a href="https://www.instagram.com/noheroes.jpg/" target="_blank" rel="noopener noreferrer">Instagram</a>.
+            </p>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
-    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
